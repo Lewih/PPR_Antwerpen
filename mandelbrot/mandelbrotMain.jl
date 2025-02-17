@@ -1,4 +1,4 @@
-# Run me inside vs code or copy me in the repl
+#(!) Run me inside vs code or copy me in the repl
 using Distributed
 
 # Creating workers
@@ -33,15 +33,17 @@ end
 # first run includes compilation!
 k = 100; iter = 10
 out = start(k, iter)
-# once computation is over, apply color and save
-# run in the repl
+#(!) when uncommenting following line you will see a black plot. 
+#(!) the master process does not wait for the processes to finish, why?
 #applyColormap(out, 25)
+#(!) run this line once computation is over, apply color and save
+#(!) run in the repl
 
 
-## run the program in single process mode using another higher level kernel
-## try to profile it, follow the stacktrace and check the allocations
-## how does it scale if you use larger k and iter?
-## can you modify the pixel kernel in order to achieve shared memory parallelism?
+##(!) run the program in single process mode using the pixel function
+##(!) try to profile it, follow the stacktrace and check the allocations
+##(!) how does it scale if you use larger k and iter?
+##(!) can you modify the pixel function in order to achieve shared memory parallelism?
 myArray = zeros(Int32, 2*k + 1*k, 2*k)
 args = (k, iter, (1, (size(myArray)[1])), size(myArray)[2], 2*k + 1, 1*k + 1, myArray)
 @btime pixel(args...)
