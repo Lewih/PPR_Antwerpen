@@ -17,3 +17,4 @@ It creates a list of small subproblems and assigns them dynamically to the worke
 How could it be improved? Sketch your ideas and read the documentation, finding out whether your conjectures are feasible.
 Try to use multithreding 
 
+![Colored](https://github.com/user-attachments/assets/c9de94ce-d44a-45a3-b1a1-3e7113cf3a70)
