@@ -19,11 +19,11 @@ Install the necessary packages if needed.
 The code is old and relies on Distributed computing machinery(the only available at the time), hence no shared memory parallelism is in place.
 It creates a list of small subproblems and assigns them dynamically to the workes reducing idle time ('load balancing': the domain of the set does not have constant computational cost). Atlhough, this approach makes the codebase more complex.
 How could it be improved? Sketch your ideas and read the documentation; is your design feasible?
-Try to use multithreding 
+Try to use multithreding.
 
 
 
 
 ## Openmp
 Try out the openmp example: think about the limitiations of using a multi-language codebase. Is it worth it in the proposed use-case?
-Try to optimise the provided C code.
+Try to optimise the provided C code or use a function provided by an external C library.
