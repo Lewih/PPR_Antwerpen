@@ -61,4 +61,4 @@ C = zeros(Float64, m, p);  # Output matrix
 #(!) Is it worth using bespoke C code in this case?
 #(!) Can you find a pre-exisitng high performance LinAlg C library?
 #(!) If so, can you call a C function from that library using Julia?
-#(!) Which routine mul! calls? What is it a BLAS call?
+#(!) Which routine mul! calls? What is it, a BLAS call?
