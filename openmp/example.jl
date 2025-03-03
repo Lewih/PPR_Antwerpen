@@ -1,5 +1,5 @@
 ## Call a C rountine embedding OMP pragmas
-# This showcase a simple example of C call in Julia.
+# This showcases a simple example of C call in Julia.
 # The C code uses openmp.
 
 # https://docs.julialang.org/en/v1/manual/calling-c-and-fortran-code/
