@@ -16,6 +16,7 @@ void mymul(double* A, double* B, double* C, int m, int n, int p) {
     //(!) What about environment variables?
     //(!) Is the memory access pattern optimal? What is A pointing to when called by Julia?
     //(!) This schoolbook implementation is O(n^3), there is a better one?
+    //(!) What about SIMD?
     #pragma omp parallel for
     for (int i = 0; i < m; i++) {
 
@@ -29,6 +30,7 @@ void mymul(double* A, double* B, double* C, int m, int n, int p) {
         }
     }
 }
+
 
 void say_y(int y)
 {
