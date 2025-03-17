@@ -22,7 +22,7 @@ How could it be improved? Sketch your ideas and read the documentation; is your 
 Try to use multithreding.
 
 ## Openmp
-Try out the openmp example: think about the limitiations of using a multi-language codebase. Is it worth it in the proposed use-case?
+Try out the openmp example and consider the limitiations of using a multi-language codebase. Is it worth it for the proposed use-case?
 Try to optimise the provided C code or use a function provided by an external C library.
 
 ## MPI

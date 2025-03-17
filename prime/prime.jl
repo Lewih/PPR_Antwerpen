@@ -28,7 +28,7 @@ function prime(n=100000)
                 end
             end
             if flag == 0
-            # write a single core version of this code and profile it
+            #(!) write a single core version of this code and profile it
             # println(x, " is prime") # printing is expensive, try to profile it
             end
         end
@@ -41,7 +41,7 @@ prime(10)
 #(!) or use BenchmarkTools @btime prime() to benchmark
 
 
-##(!) https://www.julia-vscode.org/docs/stable/userguide/profiler/
+##(!) https://www.julia-vscode.org/docs/stable/userguide/profiler/      Use vscode julia extension
 #(!) Try to see in the profiling if you can see something interesting or whether the @sync, @distributed and @threads macros are obscuring everything.
 #(!) If so, which processes are used to compute (workers)? Are you profiling a "Master" process which is not computing?
 ##(!) https://docs.julialang.org/en/v1/manual/distributed-computing/
@@ -52,7 +52,7 @@ prime(10)
 #(!) try to think about the difference between workers and master process
 
 
-## alternative text based profiling (done hiddenly in @@profview)
+## alternative text based profiling (done hiddenly in @profview)
 # using profile
 # @profile prime()
 # Profile.print()
