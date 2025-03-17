@@ -21,9 +21,11 @@ It creates a list of small subproblems and assigns them dynamically to the worke
 How could it be improved? Sketch your ideas and read the documentation; is your design feasible?
 Try to use multithreding.
 
-
-
-
 ## Openmp
 Try out the openmp example: think about the limitiations of using a multi-language codebase. Is it worth it in the proposed use-case?
 Try to optimise the provided C code or use a function provided by an external C library.
+
+## MPI
+**[MPI.jl](https://juliaparallel.org/MPI.jl/latest/)** is the Julia wrapper for MPI. It requires careful [configuration](https://juliaparallel.org/MPI.jl/latest/configuration/#using_jll_mpi) and [setup](https://juliaparallel.org/MPI.jl/latest/usage/#Julia-wrapper-for-mpiexec).
+MPI.jl can be linked to different MPI implementations which will probably differ between your own machine and the cluster.
+Be sure you are able to run `MPI/MPI_hello.jl` then explore [other examples](https://juliaparallel.org/MPI.jl/latest/examples/02-broadcast/). 
